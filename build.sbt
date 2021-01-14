@@ -9,7 +9,7 @@ lazy val akkaVersion = "2.6.10"
 val scalaTestVersion = "3.2.3"
 
 lazy val dependencies = new {
-  val akkaVersion             = "2.6.0"
+  val akkaVersion             = "2.6.10"
   val alpakkaCassandraVersion = "2.0.2"
   val logbackVersion          = "1.2.2"
 
