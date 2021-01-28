@@ -26,6 +26,12 @@ addCommandAlias("check", "all scalafmtSbtCheck scalafmtCheck test:scalafmtCheck"
 libraryDependencies ++= Seq(
   dependencies.akkaActors,
   dependencies.akkaStreams,
-  dependencies.alpakkaCassandra,
-  dependencies.logback
+  dependencies.logback,
+
+  //based on suggestion https://github.com/akka/alpakka/issues/2556
+  dependencies.alpakkaCassandra
+  excludeAll ExclusionRule(organization = "com.datastax.oss"),
+  "com.datastax.oss" % "java-driver-core" % "4.10.0",
+  "com.esri.geometry" % "esri-geometry-api" % "2.2.4"
+
 )
