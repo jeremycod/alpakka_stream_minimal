@@ -32,6 +32,8 @@ libraryDependencies ++= Seq(
   dependencies.alpakkaCassandra
   excludeAll ExclusionRule(organization = "com.datastax.oss"),
   "com.datastax.oss" % "java-driver-core" % "4.10.0",
-  "com.esri.geometry" % "esri-geometry-api" % "2.2.4"
+  "com.esri.geometry" % "esri-geometry-api" % "2.2.4",
+  "org.apache.tinkerpop" % "gremlin-core" % "3.4.10",
+  "org.apache.tinkerpop" % "gremlin-driver" % "3.4.10"
 
 )
